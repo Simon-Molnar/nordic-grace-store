@@ -1,4 +1,13 @@
 import { Product } from '@/types/product';
+import alabasterRosary from '@/assets/products/alabaster-rosary.jpg';
+import linenPrayerCord from '@/assets/products/linen-prayer-cord.jpg';
+import oakRosaryPegs from '@/assets/products/oak-rosary-pegs.jpg';
+import madonnaPrint from '@/assets/products/madonna-print.jpg';
+import adventCandles from '@/assets/products/advent-candles.jpg';
+import wallCrucifix from '@/assets/products/wall-crucifix.jpg';
+import liturgyHours from '@/assets/products/liturgy-hours.jpg';
+import liturgicalPlanner from '@/assets/products/liturgical-planner.jpg';
+import saintsPrayerCards from '@/assets/products/saints-prayer-cards.jpg';
 
 export const products: Product[] = [
   {
@@ -10,7 +19,7 @@ export const products: Product[] = [
     short_description: 'Handcrafted in Italy from genuine alabaster beads with a sterling silver crucifix.',
     long_description: 'A piece meant to be prayed with daily and passed on for generations. Each bead is shaped and polished by hand in a small family workshop outside Florence. The sterling silver crucifix is cast using traditional methods unchanged for over a century.',
     occasion_tags: ['Confirmation', 'Wedding', 'Christmas'],
-    images: ['https://images.pexels.com/photos/256962/pexels-photo-256962.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [alabasterRosary],
     stock_status: true,
     created_at: '2025-01-01T00:00:00Z',
   },
