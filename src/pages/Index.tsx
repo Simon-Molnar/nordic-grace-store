@@ -5,13 +5,12 @@ import NewsletterSignup from '@/components/NewsletterSignup';
 import { products, categoryLabels } from '@/data/products';
 import alabasterRosary from '@/assets/products/alabaster-rosary.jpg';
 import madonnaPrint from '@/assets/products/madonna-print.jpg';
-import liturgyHours from '@/assets/products/liturgy-hours.jpg';
 
 const categories = [
   { key: 'rosaries', image: alabasterRosary },
   { key: 'jewelry', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80' },
   { key: 'home', image: madonnaPrint },
-  { key: 'books', image: liturgyHours },
+  { key: 'books', image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80' },
 ];
 
 const Index = () => {
