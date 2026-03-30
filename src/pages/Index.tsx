@@ -1,16 +1,83 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import ProductCard from '@/components/ProductCard';
+import NewsletterSignup from '@/components/NewsletterSignup';
+import { products, categoryLabels } from '@/data/products';
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const categories = [
+  { key: 'rosaries', image: '/placeholder.svg' },
+  { key: 'jewelry', image: '/placeholder.svg' },
+  { key: 'home', image: '/placeholder.svg' },
+  { key: 'books', image: '/placeholder.svg' },
+];
+
+const Index = () => {
+  const featuredProducts = products.filter(p => p.featured);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div>
+      {/* Hero */}
+      <section className="bg-linen">
+        <div className="container mx-auto px-4 lg:px-8 py-24 md:py-32 text-center">
+          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">Nordic Grace</p>
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
+            Faithful living,<br />beautifully made.
+          </h1>
+          <p className="text-muted-foreground mb-8 max-w-md mx-auto">
+            A curated collection of Catholic goods for the modern home.
+          </p>
+          <Link to="/shop">
+            <Button variant="default" size="lg" className="tracking-wide">
+              Shop Easter Living
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Category Tiles */}
+      <section className="container mx-auto px-4 lg:px-8 py-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          {categories.map(cat => (
+            <Link
+              key={cat.key}
+              to={`/shop?category=${cat.key}`}
+              className="group block"
+            >
+              <div className="aspect-[3/4] bg-muted rounded overflow-hidden mb-3 flex items-center justify-center">
+                <img src={cat.image} alt={categoryLabels[cat.key]} className="w-12 h-12 opacity-30 group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <h3 className="font-serif text-sm md:text-base text-center group-hover:text-primary transition-colors">
+                {categoryLabels[cat.key]}
+              </h3>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Mission */}
+      <section className="bg-linen">
+        <div className="container mx-auto px-4 lg:px-8 py-20 max-w-3xl text-center">
+          <h2 className="font-serif text-2xl md:text-3xl mb-6">Our Story</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Nordic Grace was born out of a simple observation: beautiful Catholic living has a home in Southern Europe and in North America, but almost nowhere in the North. We believe that faith belongs in your home, on your hands, and in your everyday life. Every piece in our collection is chosen because it is genuinely well made, thoughtfully designed, and worthy of becoming part of your family's story.
+          </p>
+        </div>
+      </section>
+
+      {/* Featured Products */}
+      <section className="container mx-auto px-4 lg:px-8 py-20">
+        <h2 className="font-serif text-2xl md:text-3xl text-center mb-12">Featured</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {featuredProducts.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <NewsletterSignup />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
