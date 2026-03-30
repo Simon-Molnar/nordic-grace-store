@@ -5,9 +5,6 @@ import oakRosaryPegs from '@/assets/products/oak-rosary-pegs.jpg';
 import madonnaPrint from '@/assets/products/madonna-print.jpg';
 import adventCandles from '@/assets/products/advent-candles.jpg';
 import wallCrucifix from '@/assets/products/wall-crucifix.jpg';
-import liturgyHours from '@/assets/products/liturgy-hours.jpg';
-import liturgicalPlanner from '@/assets/products/liturgical-planner.jpg';
-import saintsPrayerCards from '@/assets/products/saints-prayer-cards.jpg';
 
 export const products: Product[] = [
   {
