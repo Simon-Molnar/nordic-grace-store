@@ -1,4 +1,13 @@
 import { Product } from '@/types/product';
+import alabasterRosary from '@/assets/products/alabaster-rosary.jpg';
+import linenPrayerCord from '@/assets/products/linen-prayer-cord.jpg';
+import oakRosaryPegs from '@/assets/products/oak-rosary-pegs.jpg';
+import madonnaPrint from '@/assets/products/madonna-print.jpg';
+import adventCandles from '@/assets/products/advent-candles.jpg';
+import wallCrucifix from '@/assets/products/wall-crucifix.jpg';
+import liturgyHours from '@/assets/products/liturgy-hours.jpg';
+import liturgicalPlanner from '@/assets/products/liturgical-planner.jpg';
+import saintsPrayerCards from '@/assets/products/saints-prayer-cards.jpg';
 
 export const products: Product[] = [
   {
@@ -10,7 +19,7 @@ export const products: Product[] = [
     short_description: 'Handcrafted in Italy from genuine alabaster beads with a sterling silver crucifix.',
     long_description: 'A piece meant to be prayed with daily and passed on for generations. Each bead is shaped and polished by hand in a small family workshop outside Florence. The sterling silver crucifix is cast using traditional methods unchanged for over a century.',
     occasion_tags: ['Confirmation', 'Wedding', 'Christmas'],
-    images: ['https://images.pexels.com/photos/256962/pexels-photo-256962.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [alabasterRosary],
     stock_status: true,
     created_at: '2025-01-01T00:00:00Z',
   },
@@ -23,7 +32,7 @@ export const products: Product[] = [
     short_description: 'A simple knotted cord for the Jesus Prayer, hand-twisted from natural linen.',
     long_description: 'Quietly beautiful and unpretentious. The prayer cord has been used by Christians in the East and West for centuries as an aid to contemplative prayer. This version is made from undyed natural linen and closes with a small tassel.',
     occasion_tags: ['Baptism', 'Christmas'],
-    images: ['https://images.pexels.com/photos/3616963/pexels-photo-3616963.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [linenPrayerCord],
     stock_status: true,
     created_at: '2025-01-02T00:00:00Z',
   },
@@ -36,7 +45,7 @@ export const products: Product[] = [
     short_description: 'Five wall-mounted pegs in solid oak for displaying rosaries or jewelry.',
     long_description: 'Minimalist design that suits any home. Each peg is turned from sustainably sourced oak and finished with a natural oil. Mount them in a row or scatter them across a wall — either way, your rosaries are always within reach.',
     occasion_tags: ['Christmas'],
-    images: ['https://images.pexels.com/photos/5199797/pexels-photo-5199797.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [oakRosaryPegs],
     stock_status: true,
     created_at: '2025-01-03T00:00:00Z',
   },
@@ -88,7 +97,7 @@ export const products: Product[] = [
     short_description: 'A softly rendered interpretation of the Madonna and Child in muted earth tones.',
     long_description: 'Printed on heavyweight 300gsm cotton paper with archival inks. Available in A4 and A3. The image is designed to feel at home in a modern Scandinavian interior without losing its devotional character. Ships flat in a protective sleeve.',
     occasion_tags: ['Christmas', 'Easter'],
-    images: ['https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [madonnaPrint],
     stock_status: true,
     created_at: '2025-01-07T00:00:00Z',
   },
@@ -101,7 +110,7 @@ export const products: Product[] = [
     short_description: 'Four hand-dipped beeswax candles in natural cream, made in Scandinavia.',
     long_description: 'Burns cleanly and smells gently of honey. The set includes four tapered candles sized to burn through each Sunday of Advent. Made from 100% pure beeswax sourced from Nordic beekeepers. No additives, no paraffin, no artificial scent.',
     occasion_tags: ['Christmas'],
-    images: ['https://images.pexels.com/photos/9966442/pexels-photo-9966442.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [adventCandles],
     stock_status: true,
     created_at: '2025-01-08T00:00:00Z',
   },
@@ -114,7 +123,7 @@ export const products: Product[] = [
     short_description: 'A wall-mounted crucifix in pale ash wood with a white resin corpus.',
     long_description: 'Designed to complement a modern, light interior. The cross is cut from a single piece of ash wood and finished with a matte natural oil. The corpus is cast in white resin with fine detail. Suitable for a bedroom, hallway, or living room.',
     occasion_tags: ['Baptism', 'Wedding', 'Christmas'],
-    images: ['https://images.pexels.com/photos/6249458/pexels-photo-6249458.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [wallCrucifix],
     stock_status: true,
     created_at: '2025-01-09T00:00:00Z',
   },
@@ -127,7 +136,7 @@ export const products: Product[] = [
     short_description: 'A single-volume edition of the Divine Office suitable for daily use.',
     long_description: 'Ribbon markers, flexible cover, and a typeface sized for comfortable reading. Includes Morning Prayer, Evening Prayer, Night Prayer, and the full Office of Readings. A practical companion for anyone committed to praying the hours.',
     occasion_tags: ['Confirmation', 'Christmas'],
-    images: ['https://images.pexels.com/photos/762687/pexels-photo-762687.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [liturgyHours],
     stock_status: true,
     created_at: '2025-01-10T00:00:00Z',
   },
@@ -140,7 +149,7 @@ export const products: Product[] = [
     short_description: 'A beautifully laid-out liturgical planner with the full church calendar.',
     long_description: 'Includes the complete liturgical calendar, space for prayer intentions, seasonal reflections for Advent, Christmas, Lent, and Easter, and a monthly overview format that works alongside a standard diary. Printed on cream paper with a linen-effect cover.',
     occasion_tags: ['Christmas'],
-    images: ['https://images.pexels.com/photos/6373716/pexels-photo-6373716.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [liturgicalPlanner],
     stock_status: true,
     created_at: '2025-01-11T00:00:00Z',
   },
@@ -153,7 +162,7 @@ export const products: Product[] = [
     short_description: 'Eight illustrated cards featuring Scandinavian and Northern European saints.',
     long_description: 'The set includes Saint Birgitta of Sweden, Saint Eric of Sweden, Saint Ansgar, Saint Olav of Norway, Saint Henry of Finland, Saint Canute of Denmark, Saint Sigfrid, and Blessed Hemming of Turku. Each card carries a short biography and a prayer on the reverse. Printed on linen-textured card stock.',
     occasion_tags: ['Baptism', 'Confirmation', 'Christmas'],
-    images: ['https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop'],
+    images: [saintsPrayerCards],
     stock_status: true,
     created_at: '2025-01-12T00:00:00Z',
   },
