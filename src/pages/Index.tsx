@@ -5,10 +5,10 @@ import NewsletterSignup from '@/components/NewsletterSignup';
 import { products, categoryLabels } from '@/data/products';
 
 const categories = [
-  { key: 'rosaries', image: '/placeholder.svg' },
-  { key: 'jewelry', image: '/placeholder.svg' },
-  { key: 'home', image: '/placeholder.svg' },
-  { key: 'books', image: '/placeholder.svg' },
+  { key: 'rosaries', image: 'https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&q=80' },
+  { key: 'jewelry', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80' },
+  { key: 'home', image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80' },
+  { key: 'books', image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80' },
 ];
 
 const Index = () => {
@@ -44,7 +44,7 @@ const Index = () => {
               className="group block"
             >
               <div className="aspect-[3/4] bg-muted rounded overflow-hidden mb-3 flex items-center justify-center">
-                <img src={cat.image} alt={categoryLabels[cat.key]} className="w-12 h-12 opacity-30 group-hover:scale-105 transition-transform duration-500" />
+                <img src={cat.image} alt={categoryLabels[cat.key]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="font-serif text-sm md:text-base text-center group-hover:text-primary transition-colors">
                 {categoryLabels[cat.key]}
