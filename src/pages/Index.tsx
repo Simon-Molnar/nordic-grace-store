@@ -10,7 +10,7 @@ const categories = [
   { key: 'rosaries', image: alabasterRosary },
   { key: 'jewelry', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80' },
   { key: 'home', image: madonnaPrint },
-  { key: 'books', image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80' },
+  { key: 'books', image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&q=80' },
 ];
 
 const Index = () => {
